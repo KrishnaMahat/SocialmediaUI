@@ -1,0 +1,45 @@
+.feedcard{
+    width: 100%;
+}
+.posted{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    background-color: var(--cardColor);
+    padding: 10px;
+    border-radius: 0.7rem ;
+    margin-top: 1rem;
+    width: 100%;
+   
+}
+
+.posted>img{
+    width: 100%;
+    border-radius: 0.9rem;
+    
+}
+.postytext{
+    display: flex;
+    flex-direction: column;
+}
+.postytext>span:nth-of-type(1){
+    font-weight: bold;
+}
+
+.posted>hr{
+    border:1px solid var(--hrColor);
+}
+
+.feedreact{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+}
+.feedreact>div{
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    gap:0.3rem;
+}

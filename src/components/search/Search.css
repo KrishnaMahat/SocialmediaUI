@@ -1,0 +1,37 @@
+.search{
+    display: flex;
+    gap:0.75rem;
+    width: 100%;
+}
+
+.searchbox{
+    display: flex;
+    background-color: var(--inputColor);
+    border-radius: 10px;
+    padding:5px;
+    gap: 1rem;
+    width: 100%;
+    
+}
+
+.searchbox>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.searchicons{
+    display: flex;
+    padding: 8px 10px 8px 10px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    background: var(--backcolor);
+    border-radius: 5px;
+    color: white;
+}
+
+.searchbox:hover{
+    cursor: pointer;
+}

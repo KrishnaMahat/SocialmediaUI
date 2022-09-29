@@ -1,0 +1,215 @@
+.nav-bar {
+  background-color: var(--maincolor);
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: 0;
+  z-index: 3;
+  min-height:60px;
+  display: flex;
+  
+
+  .logo {
+    display: flex;
+    padding: 0px 45px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    img {
+      display: flex;
+      margin: 8px auto;
+      width: 34px;
+      height: auto;
+    
+
+      &.sub-logo {
+        width: 100px;
+        height: 40px;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    text-align: center;
+    position: relative;
+    left:55%;
+    width: 25%;
+    top:  5px;
+    justify-content: space-between;
+
+    
+
+    a {
+      font-size: 22px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+      
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: red;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 12px;
+        text-align:center;
+        letter-spacing: 2px;
+        font-family:'Coolvetica';
+        position: relative;
+        top:-50px;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &:after {
+          content: 'HOME';
+
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'PROFILE';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'SERVICE';
+      }
+    }
+
+    a.active {
+      svg {
+        color: red;
+      }
+    }
+  }
+
+  
+}
+
+.loginbutton {
+  position:absolute;
+  left:90%;
+  top:  20px;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family:'Coolvetica';
+  color: #ffffff;
+  font-size: 15px;
+  background: #ff0000;
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+}
+
+.loginbutton:hover {
+  background: #4d4d4e;
+  text-decoration: none;
+}
+
+.hamburger-icon, .close-icon {
+  display: none;
+  color: #4d4d4e;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .nav-bar { 
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+     ul, nav {
+      display: none;
+     }
+
+     nav {
+      width: 40%;
+      top: 0%;
+      left: 60%;
+      background: #181818;
+      height: 100%;
+      margin: 0;
+      z-index: 2;
+      position: fixed;
+ 
+    
+
+      &.mobile-show {
+        display: block;
+     
+      }
+
+      a {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 10%;
+        top:10%;
+
+
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10PX;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+     }
+
+     .hamburger-icon,
+     .close-icon {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        display: block;
+        font-size:larger;
+     }
+     .loginbutton{
+       display:none; 
+     }
+  }
+   
+
+  .logo {
+    display: block;
+    margin-left:-30px;
+  }
+}

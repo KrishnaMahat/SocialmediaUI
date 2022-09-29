@@ -1,0 +1,14 @@
+.home{
+    position: relative;
+    display: grid;
+    grid-template-columns: 21% auto 23%;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .home{
+        display: block;
+    }
+    
+    }

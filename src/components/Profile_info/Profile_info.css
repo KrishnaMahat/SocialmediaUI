@@ -1,0 +1,35 @@
+.profileinfo{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cardColor);
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    width: 100%;
+    gap:1rem;
+}
+
+.profileinfo>div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.profileinfo>hr{
+    width: 85%;
+    border: 1px solid var(--hrColor);
+}
+
+.onlyinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.onlyinfo>div>span:nth-of-type(2){
+    font-weight: bold;
+}
+
+.onlyinfo>div>span:nth-of-type(3){
+    font-style:italic;
+}

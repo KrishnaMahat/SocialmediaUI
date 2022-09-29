@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cardColor);
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    border-radius: 1.5rem;
+}
+
+.nav>a{
+    cursor: pointer;
+}
+
+
